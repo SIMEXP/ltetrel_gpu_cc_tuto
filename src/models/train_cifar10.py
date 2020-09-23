@@ -10,7 +10,7 @@ def get_cifar10():
     x_train = np.empty((num_train_samples, 3, 32, 32), dtype='uint8')
     y_train = np.empty((num_train_samples,), dtype='uint8')
     filedir = os.path.dirname(__file__)
-    path = os.path.join(dirname, "../../data/", "cifar-10-batches-py")
+    path = os.path.join(filedir, "../../data/", "cifar-10-batches-py")
 
     for i in range(1, 6):
 	    fpath = os.path.join(path, 'data_batch_' + str(i))
